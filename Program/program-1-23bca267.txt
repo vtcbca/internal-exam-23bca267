@@ -1,0 +1,27 @@
+ .open
+sqlite> create table stud(sid,sname,dept,paidfee);
+sqlite> insert into stud values(101,'akshita','bca',14500),
+   ...> (102,'mahek','bca',15500),
+   ...> (103,'khushi','bba',14500),
+   ...> (104,'katha','bca',15500),
+   ...> (105,'harshil','bba',12500),
+   ...> (106,'shreya','bca',14500),
+   ...> (107,'varun','bba',12500),
+   ...> (108,'het','bca',13500);
+sqlite> select * from stud;
+101|akshita|bca|14500
+102|mahek|bca|15500
+103|khushi|bba|14500
+104|katha|bca|15500
+105|harshil|bba|12500
+106|shreya|bca|14500
+107|varun|bba|12500
+108|het|bca|13500
+sqlite> .mode column
+sqlite> .mode csv
+sqlite> .output C:\23bca267\csv\stud.csv
+Error: cannot open "C:‼bca267csvstud.csv"
+Error: cannot write to "C:‼bca267csvstud.csv"
+sqlite> .output C:/23bca267/csv/stud.csv
+sqlite> select * from stud;
+sqlite>
